@@ -1,25 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FCC JHILMILA | Fierocious Cricket Club</title>
   <meta name="description" content="Official website of FCC JHILMILA Cricket Club.">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="style.css">  <style>
+    /* Upcoming Matches */
+    .matches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
 
-<body>
+    .match-card {
+      background: #111827;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
 
-<header class="topbar">
+    .match-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    .match-label {
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.1);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .match-card h3 {
+      font-size: 20px;
+      margin: 5px 0 18px;
+    }
+
+    .teams {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .vs {
+      display: block;
+      font-size: 13px;
+      opacity: 0.6;
+      margin: 5px 0;
+    }
+
+    .match-info {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 16px;
+      display: grid;
+      gap: 9px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .match-status {
+      margin-top: 18px;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 15px;
+      background: rgba(34,197,94,0.15);
+      color: #86efac;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  </style></head><body><header class="topbar">
   <div class="brand">
     <img src="logo.jpg" alt="FCC JHILMILA logo">
     <div>
       <strong>FCC JHILMILA</strong>
       <span>Fierocious Cricket Club</span>
     </div>
-  </div>
-
-  <button class="menu" onclick="toggleMenu()">☰</button>
+  </div><button class="menu" onclick="toggleMenu()">☰</button>
 
   <nav id="nav">
     <a href="#home">Home</a>
@@ -29,124 +94,113 @@
     <a href="#gallery">Gallery</a>
     <a href="#about">About</a>
   </nav>
-</header>
+</header><main><section id="home" class="hero">
+  <div class="hero-bg"></div>  <div class="hero-content">
+    <img class="hero-logo" src="logo.jpg" alt="FCC JHILMILA"><p class="tag">FIERCIOUS CRICKET CLUB</p>
+<h1>FCC JHILMILA</h1>
+<p class="hero-text">Pride. Passion. Cricket.</p>
 
-<main>
+<div class="buttons">
+  <a class="btn primary" href="#league">View League</a>
+  <a class="btn secondary" href="#gallery">Team Gallery</a>
+</div>
 
-<section id="home" class="hero">
-  <div class="hero-bg"></div>
-
-  <div class="hero-content">
-    <img class="hero-logo" src="logo.jpg" alt="FCC JHILMILA">
-
-    <p class="tag">FIERCIOUS CRICKET CLUB</p>
-    <h1>FCC JHILMILA</h1>
-    <p class="hero-text">Pride. Passion. Cricket.</p>
-
-    <div class="buttons">
-      <a class="btn primary" href="#league">View League</a>
-      <a class="btn secondary" href="#gallery">Team Gallery</a>
-    </div>
   </div>
-</section>
-
-<section class="quick">
+</section><section class="quick">
   <div><b>🏆</b><span>League</span><small>Coming Soon</small></div>
   <div><b>🔴</b><span>Live Score</span><small>Coming Soon</small></div>
   <div><b>📊</b><span>Points Table</span><small>Coming Soon</small></div>
-  <div><b>🏏</b><span>Matches</span><small>Coming Soon</small></div>
-</section>
-
-<section id="league" class="section">
+  <div><b>🏏</b><span>Matches</span><small>2 Upcoming</small></div>
+</section><section id="league" class="section">
   <div class="section-title">
     <p>TOURNAMENT</p>
     <h2>League Center</h2>
-  </div>
-
-  <div class="card league-card">
+  </div>  <div class="card league-card">
     <div class="league-badge">🏆</div>
     <div>
       <h3>Jhilmila Challenge League</h3>
       <p>Teams, fixtures, results, points table and tournament updates will appear here.</p>
     </div>
   </div>
-</section>
-
-<section id="matches" class="section dark-section">
-  <div class="section-title">
+</section><!-- UPCOMING MATCHES --><section id="matches" class="section dark-section">  <div class="section-title">
     <p>MATCH CENTER</p>
     <h2>Upcoming Matches</h2>
+  </div>  <div class="matches-grid"><!-- MATCH 1 -->
+<div class="match-card">
+  <span class="match-label">SPECIAL MATCH</span>
+
+  <h3>One day Special Test Match</h3>
+
+  <div class="teams">
+    Special Test Match
   </div>
 
-  <div class="empty">
-    <span>🏏</span>
-    <h3>No fixtures added yet</h3>
-    <p>Matches will be added soon.</p>
+  <div class="match-info">
+    <div>📅 <strong>13 September 2026</strong></div>
+    <div>⏰ <strong>10:00 AM</strong></div>
+    <div>📍 <strong>FCC JHILMILA PLAYGROUND</strong></div>
   </div>
-</section>
 
-<section id="players" class="section">
+  <span class="match-status">UPCOMING</span>
+</div>
+
+
+<!-- MATCH 2 -->
+<div class="match-card">
+  <span class="match-label">NUAKHAI SPECIAL</span>
+
+  <h3>Nuakhai Special Match</h3>
+
+  <div class="teams">
+    Uparpada Ke Baaz
+    <span class="vs">VS</span>
+    Talpada Tigers
+  </div>
+
+  <div class="match-info">
+    <div>📅 <strong>15 September 2026</strong></div>
+    <div>⏰ <strong>4:00 PM</strong></div>
+    <div>📍 <strong>FCC JHILMILA PLAYGROUND</strong></div>
+  </div>
+
+  <span class="match-status">UPCOMING</span>
+</div>
+
+  </div></section><section id="players" class="section">
   <div class="section-title">
     <p>THE SQUAD</p>
     <h2>FCC JHILMILA Players</h2>
-  </div>
-
-  <div class="empty light">
+  </div>  <div class="empty light">
     <span>👥</span>
     <h3>Players will be added soon</h3>
     <p>Name, jersey number, role, photo and statistics will be shown here.</p>
   </div>
-</section>
-
-<section id="gallery" class="section gallery-section">
+</section><section id="gallery" class="section gallery-section">
   <div class="section-title">
     <p>OUR MEMORIES</p>
     <h2>Team Gallery</h2>
-  </div>
-
-  <div class="gallery">
+  </div>  <div class="gallery">
     <img src="team-photo-1.jpg" alt="FCC JHILMILA team">
     <img src="team-photo-2.jpg" alt="FCC JHILMILA players">
     <img src="team-photo-3.jpg" alt="FCC JHILMILA team celebration">
   </div>
-</section>
-
-<section id="about" class="section about">
-
-  <div class="about-logo">
+</section><section id="about" class="section about">  <div class="about-logo">
     <img src="logo.jpg" alt="FCC JHILMILA logo">
-  </div>
-
-  <div>
+  </div>  <div>
     <p class="eyebrow">ABOUT THE CLUB</p>
-    <h2>Fierocious Cricket Club JHILMILA</h2>
+    <h2>Fierocious Cricket Club JHILMILA</h2><p>
+  FCC JHILMILA is a cricket club from Jhilmila.
+  Team information, players, league management,
+  live scoring, results and statistics will be added
+  step-by-step.
+</p>
 
-    <p>
-      FCC JHILMILA is a cricket club from Jhilmila.
-      Team information, players, league management,
-      live scoring, results and statistics will be added
-      step-by-step.
-    </p>
-  </div>
-
-</section>
-
-</main>
-
-<footer>
-
-  <img src="logo.jpg" alt="FCC JHILMILA">
-
-  <div>
+  </div></section></main><footer>  <img src="logo.jpg" alt="FCC JHILMILA">  <div>
     <strong>FCC JHILMILA</strong>
     <p>Fierocious Cricket Club</p>
-  </div>
+  </div><span>© 2026 FCC JHILMILA</span>
 
-  <span>© 2026 FCC JHILMILA</span>
-
-</footer>
-
-<script>
+</footer><script>
 function toggleMenu() {
   document.getElementById('nav').classList.toggle('show');
 }
@@ -156,7 +210,5 @@ document.querySelectorAll('nav a').forEach(a => {
     document.getElementById('nav').classList.remove('show');
   });
 });
-</script>
-
-</body>
+</script></body>
 </html>
