@@ -78,6 +78,30 @@
       font-size: 12px;
       font-weight: 700;
     }
+    <style>
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.player-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 18px 12px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: 0.25s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.35);
+}
+</style>
   </style></head><body><header class="topbar">
   <div class="brand">
     <img src="logo.jpg" alt="FCC JHILMILA logo">
