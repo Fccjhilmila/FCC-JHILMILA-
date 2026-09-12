@@ -619,3 +619,15 @@ footer p{
     height:650px;
   }
 }
+.league-content{
+  flex:1;
+}
+
+.league-content h3{
+  font-size:22px;
+}
+
+.league-content p{
+  color:#667085;
+  margin-top:5px;
+}
